@@ -6,9 +6,10 @@ class BarraNavegacion extends Component {
         return (
             <div className="barra">
                 <ul className="opciones">
-                    <li id="sobremi"><a href="#">Sobre mi</a></li>
-                    <li id="proyectos"><a href="#">Proyectos</a></li>
-                    <li id="blog"><a href="#">Blog</a></li>
+                    <li><a href="#">Sobre mi</a></li>
+                    <li><a href="#">Proyectos</a></li>
+                    <li><a href="#">Contacto</a></li>
+                    <li><a href="#">Blog</a></li>
                 </ul>
             </div>
         );

@@ -10,7 +10,13 @@ a:link, a:hover, a:visited, a:active, a {
 }
 
 .perfil{
-    background-color: aqua;
     text-align: center;
     padding-top: 50px;
+}
+
+.footer{
+    position: fixed;
+    bottom: 0;
+    width: 25%;
+    text-align: center;
 }

@@ -1,4 +1,6 @@
 .contenido{
     margin-top: 50px;
     overflow: scroll;
+    padding-left: 10px;
+    text-align: center;
 }
