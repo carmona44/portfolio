@@ -1,6 +1,14 @@
 .contenido{
-    margin-top: 50px;
+    margin-top: 53px;
     overflow: scroll;
+    overflow-x: hidden;
     padding-left: 10px;
     text-align: center;
+}
+
+.grupoProyectos{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+    row-gap: 30px;
 }
