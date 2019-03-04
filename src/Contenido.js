@@ -33,16 +33,16 @@ class Contenido extends Component {
                     </p>
                     <p>
                         Entre mis conocimientos destacan:
-                        <ul>
-                            <li>CSS3</li>
-                            <li>HTML5</li>
-                            <li>JavaScript</li>
-                            <li>Java</li>
-                            <li>AngularJS</li>
-                            <li>Ionic</li>
-                            <li>ReactJS</li>
-                            <li>NodeJS</li>
-                            <li>SQL</li>
+                        <ul className="conocimientos">
+                            <li><i class="fab fa-css3-alt"></i> CSS3</li>
+                            <li><i class="fab fa-html5"></i> HTML5</li>
+                            <li><i class="fab fa-js-square"></i> JavaScript</li>
+                            <li><i class="fab fa-java"></i> Java</li>
+                            <li><i class="fab fa-angular"></i> AngularJS</li>
+                            <li><img src="https://ionicframework.com/img/meta/favicon-16x16.png"></img> Ionic</li>
+                            <li><i class="fab fa-react"></i> ReactJS</li>
+                            <li><i class="fab fa-node"></i> NodeJS</li>
+                            <li><i class="fas fa-database"></i>SQL</li>
                         </ul>
                         Siendo JavaScript junto con ReactJS el lenguaje y framework que utilizo actualmente en mis proyectos.
                     </p>

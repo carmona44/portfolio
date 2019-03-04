@@ -12,3 +12,41 @@
     justify-items: center;
     row-gap: 30px;
 }
+
+.conocimientos{
+    list-style: none;
+    border: 2px solid black;
+    width: 250px;
+    margin: 20px auto;
+    padding: 0;
+    border-radius: 10px;
+}
+
+.conocimientos li{
+    padding: 8px;
+}
+
+.conocimientos li:first-child{
+    border-radius: 7px 7px 0px 0px;
+}
+
+.conocimientos li:last-child{
+    border-radius: 0px 0px 7px 7px;
+}
+
+.conocimientos li:nth-child(odd){
+    background-color: #0e132e;
+    color: white;
+}
+
+.conocimientos li:nth-child(even){
+    background-color: lightgreen;
+}
+
+.conocimientos li i {
+    float: left;
+}
+
+.conocimientos li img {
+    float: left;
+}

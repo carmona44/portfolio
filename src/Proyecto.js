@@ -11,6 +11,9 @@ class Proyecto extends Component {
 
     render(){
         let lenguajeColor = this.state.proyectoActual.lenguaje === "JavaScript" ? {color:"#f1e05a"} : {color:"#b07219"};
+        let botonVisita = this.state.proyectoActual.url ?
+            <a className="visitar" href={this.state.proyectoActual.url} target="_blank">Visitar</a>
+            : <span className="noweb">No web</span>;
         return(
             <div className="proyecto">
                 <div className="contenidoProyecto">
@@ -22,7 +25,7 @@ class Proyecto extends Component {
                         <img className="imagen" src={this.state.proyectoActual.img} alt={"Imagen del proyecto " + this.state.proyectoActual.nombre}/>
                     </div>
                     <div className="proyectoFooter">
-                        <a className="visitar" href={this.state.proyectoActual.url} target="_blank">Visitar</a>
+                        {botonVisita}
                         <a className="github" href={this.state.proyectoActual.ghUrl} target="_blank"><i class="fab fa-github"></i></a>
                     </div>
                 </div>

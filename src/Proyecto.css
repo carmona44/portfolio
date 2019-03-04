@@ -67,3 +67,11 @@
 .titulo{
     font-weight: bold;
 }
+
+.noweb{
+    float: left;
+    margin-left: 10px;
+    padding-top: 3px;
+    color: darkred;
+    font-weight: bold;
+}
