@@ -6,6 +6,7 @@ import Foto2 from './markdown-previewer.JPG';
 import Foto3 from './calculadora.JPG';
 import Foto4 from './generador-password.JPG';
 import Foto5 from './random-team.JPG';
+import Foto6 from './portfolio.JPG';
 
 const proyectos = [
     {nombre:"Webs interesantes", lenguaje:"JavaScript", img:Foto1, url:"https://carmona44.github.io/webs-interesantes/", ghUrl:"https://github.com/carmona44/webs-interesantes", year:"2019"},
@@ -13,8 +14,8 @@ const proyectos = [
     {nombre:"Calculadora", lenguaje:"JavaScript", img:Foto3, url:"https://carmona44.github.io/javascript-calculator/", ghUrl:"https://github.com/carmona44/javascript-calculator", year:"2019"},
     {nombre:"Generador passswords", lenguaje:"Java", img:Foto4, url:"", ghUrl:"https://github.com/carmona44/Generador_passwords", year:"2016"},
     {nombre:"Random team", lenguaje:"JavaScript", img:Foto5, url:"", ghUrl:"https://github.com/carmona44/randomTeam", year:"2018"},
-    {nombre:"Portfolio", lenguaje:"JavaScript", img:"", url:"https://carmona44.github.io/portfolio/", ghUrl:"https://github.com/carmona44/portfolio", year:"2019"}
-]
+    {nombre:"Portfolio", lenguaje:"JavaScript", img:Foto6, url:"https://carmona44.github.io/portfolio/", ghUrl:"https://github.com/carmona44/portfolio", year:"2019"}
+];
 
 class Contenido extends Component {
     render(){
