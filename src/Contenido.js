@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import ClipboardJS from 'clipboard';
 import './Contenido.css';
 import Proyecto from './Proyecto.js';
 import Foto1 from './webs-interesantes.JPG';
@@ -18,7 +19,24 @@ const proyectos = [
 ];
 
 class Contenido extends Component {
+
+    constructor(props){
+        super(props);
+        this.state = {
+            mostrarMensaje: false
+        };
+    }
+
+    handleMensaje = () => {
+        this.setState({
+            mostrarMensaje: true
+        });
+    };
+
     render(){
+
+        var clipboard = new ClipboardJS('#copiarCorreo');
+
         return (
             <div className="contenido">
                 <div id="sobremi">
@@ -63,7 +81,9 @@ class Contenido extends Component {
                 <div id="contacto">
                     <h2>CONTACTO</h2>
                     <div className="contenidoContacto">
-                        <a className="botonContenido" href="mailto:dcacarmona44@gmail.com"><i class="far fa-envelope"></i> Mándame un correo</a><i id="copiarCorreo" class="far fa-clone" title="Copiar correo al portapapeles"></i>
+                        <a className="botonContenido" href="mailto:dcacarmona44@gmail.com"><i class="far fa-envelope"></i> Mándame un correo</a>
+                        <i id="copiarCorreo" class="far fa-clone" title="Copiar correo al portapapeles" data-clipboard-text="dcacarmona44@gmail.com" onClick={this.handleMensaje}></i>
+                        {this.state.mostrarMensaje ? <div className="mensaje"><span className="mensajeCopiado">¡ Correo copiado al portapapeles !</span></div> : null}
                         <p>O contacta conmigo a través de: </p>
                         <div className="iconosContacto">
                             <a href="https://twitter.com/Carmona44" target="_blank"><i class="fab fa-twitter-square"></i></a>
