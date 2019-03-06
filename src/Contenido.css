@@ -1,9 +1,30 @@
 .contenido{
-    margin-top: 53px;
+    margin-top: 54px;
     overflow: scroll;
     overflow-x: hidden;
-    padding-left: 10px;
     text-align: center;
+    min-width: 800px;
+}
+
+h2{
+    padding: 65px 0;
+    margin: 0;
+    color: aliceblue;
+    font-family: "AR JULIAN";
+    font-size: 35px;
+
+    /*Efecto parallax*/
+    background-image: url('binary-earth.jpg');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.contenidoSobremi{
+    background-color: #474e5d;
+    color: white;
+    padding: 80px 15px;
 }
 
 .grupoProyectos{
@@ -11,15 +32,19 @@
     grid-template-columns: 1fr 1fr 1fr;
     justify-items: center;
     row-gap: 30px;
+    border-bottom: 4px solid black;
+    padding-bottom: 80px;
+    padding-top: 80px;
 }
 
 .conocimientos{
     list-style: none;
     border: 2px solid black;
     width: 250px;
-    margin: 20px auto;
+    margin: 50px auto;
     padding: 0;
     border-radius: 10px;
+    font-family: fantasy;
 }
 
 .conocimientos li{
@@ -36,11 +61,11 @@
 
 .conocimientos li:nth-child(odd){
     background-color: #0e132e;
-    color: white;
 }
 
 .conocimientos li:nth-child(even){
     background-color: lightgreen;
+    color: black;
 }
 
 .conocimientos li i {
@@ -49,4 +74,89 @@
 
 .conocimientos li img {
     float: left;
+}
+
+.botonContenido{
+    color: white !important;
+    text-decoration: none;
+    background-image: linear-gradient(to bottom right, gold, black);
+    padding: 15px;
+    border-radius: 5px;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+.botonContenido:hover{
+    box-shadow: 3px 3px 5px gold;
+}
+
+.contenidoBlog{
+    padding: 80px 15px;
+    background-color: #0e132e;
+    color: white;
+    height: 100%;
+    font-family: "Berlin Sans FB";
+}
+
+.parrafoBlog{
+    padding-bottom: 40px;
+}
+
+.contenidoContacto{
+    background-color: #1abc9c;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    color: white;
+}
+
+.contenidoContacto p{
+    padding-top: 40px;
+    padding-bottom: 15px;
+}
+
+#copiarCorreo{
+    margin-left: 15px;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+#copiarCorreo:hover{
+    transform: scale(1.2);
+}
+
+.iconosContacto{
+    max-width: 500px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin: 0 auto;
+    justify-items: center;
+}
+
+.iconosContacto a {
+    width: 35px;
+    height: 40px;
+}
+
+.iconosContacto a i {
+    text-decoration: none;
+    transform: scale(2);
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+.iconosContacto a i:hover {
+    transform: scale(2.5);
+}
+
+.palabraDestacada{
+    color: gold;
 }

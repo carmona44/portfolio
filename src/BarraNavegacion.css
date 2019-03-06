@@ -18,7 +18,7 @@
 
 .opciones li a:hover{
     font-weight: bold;
-    padding-bottom: 15px;
+    padding-bottom: 14px;
     border-bottom: 3px solid black;
 }
 
@@ -27,4 +27,5 @@
     position: fixed;
     height: auto;
     margin-left: 25%;
+    min-width: 800px;
 }
