@@ -4,7 +4,6 @@
     text-align: center;
     justify-items: center;
     align-items: center;
-    border-bottom: 1px solid black;
     padding-bottom: 15px;
     padding-top: 15px;
     margin: 0;
@@ -25,6 +24,7 @@
     font-weight: bold;
     padding-bottom: 14px;
     border-bottom: 3px solid black;
+    margin: 0;
 }
 
 .barra{
@@ -32,9 +32,10 @@
     position: fixed;
     height: auto;
     margin-left: 25%;
+    background-color: white;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 800px) {
     .barra{
         width: 100%;
         margin: 0;
