@@ -36,6 +36,7 @@ class Contenido extends Component {
     render(){
 
         var clipboard = new ClipboardJS('#copiarCorreo');
+        let year = new Date().getFullYear();
 
         return (
             <div className="contenido">
@@ -105,6 +106,7 @@ class Contenido extends Component {
                             <i class="fas fa-angle-right"></i> Ir al BLOG antiguo</a>
                     </div>
                 </div>
+                <footer className="footerAbsoluto">&copy; {year} Daniel Carmona</footer>
             </div>
         );
     }

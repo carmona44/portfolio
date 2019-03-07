@@ -3,7 +3,6 @@
     overflow: scroll;
     overflow-x: hidden;
     text-align: center;
-    min-width: 800px;
 }
 
 h2{
@@ -169,4 +168,37 @@ h2{
     padding: 5px;
     border-radius: 5px;
     font-size: 17px;
+}
+
+.footerAbsoluto{
+    display: none;
+    padding: 10px 0;
+}
+
+@media only screen and (max-width: 1200px) {
+    .grupoProyectos{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .grupoProyectos{
+        grid-template-columns: 1fr;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .contenido{
+        margin-top: 0;
+        overflow: hidden;
+    }
+
+    .footerAbsoluto{
+        display: block;
+        width: 100%;
+        bottom: 0;
+        font-family: Pristina;
+        color: white;
+        background-color: #2f2f2f;
+    }
 }

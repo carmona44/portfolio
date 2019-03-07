@@ -4,8 +4,8 @@ a:link, a:hover, a:visited, a:active, a {
 }
 
 .foto{
-    height: 30%;
-    width: 55%;
+    height: 150px;
+    width: 150px;
     border-radius: 100%;
 }
 
@@ -45,4 +45,14 @@ a:link, a:hover, a:visited, a:active, a {
 
 .descripcion{
     font-family: "AR ESSENCE";
+}
+
+@media only screen and (max-width: 600px) {
+    .perfil{
+        padding-bottom: 50px;
+    }
+
+    .footer{
+        display: none;
+    }
 }

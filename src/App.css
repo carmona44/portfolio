@@ -8,3 +8,10 @@
 .parteDerecha{
     max-height: 100vh;
 }
+
+@media only screen and (max-width: 600px) {
+    .App{
+        grid-template-columns: 1fr;
+        height: auto;
+    }
+}
