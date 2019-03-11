@@ -14,6 +14,7 @@
     -o-transition: all 0.3s;
     transition: all 0.3s;
 }
+
 .contenidoProyecto:hover{
     transform: scale(1.2);
     background-color: lightseagreen;
@@ -75,4 +76,11 @@
     padding-top: 3px;
     color: darkred;
     font-weight: bold;
+}
+
+@media only screen and (max-width: 500px) {
+    .contenidoProyecto:hover{
+        background-color: lightseagreen;
+        transform: none;
+    }
 }
