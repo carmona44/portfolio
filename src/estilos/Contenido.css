@@ -1,3 +1,33 @@
+@font-face {
+    font-family: 'AR JULIAN';
+    src: url('./fuentes/ARJULIAN.eot');
+    src: local('ARJULIAN'),
+    url('./fuentes/ARJULIAN.eot?#iefix') format('embedded-opentype'),
+    url('./fuentes/ARJULIAN.woff') format('woff'),
+    url('./fuentes/ARJULIAN.ttf') format('truetype'),
+    url('./fuentes/ARJULIAN.svg') format('svg');
+}
+
+@font-face {
+    font-family: 'Berlin Sans FB';
+    src: url('./fuentes/BRLNSR.eot');
+    src: local('BRLNSR'),
+    url('./fuentes/BRLNSR.eot?#iefix') format('embedded-opentype'),
+    url('./fuentes/BRLNSR.woff') format('woff'),
+    url('./fuentes/BRLNSR.ttf') format('truetype'),
+    url('./fuentes/BRLNSR.svg') format('svg');
+}
+
+@font-face {
+    font-family: 'Pristina';
+    src: url('./fuentes/PRISTINA.eot');
+    src: local('PRISTINA'),
+    url('./fuentes/PRISTINA.eot?#iefix') format('embedded-opentype'),
+    url('./fuentes/PRISTINA.woff') format('woff'),
+    url('./fuentes/PRISTINA.ttf') format('truetype'),
+    url('./fuentes/PRISTINA.svg') format('svg');
+}
+
 .contenido{
     margin-top: 54px;
     overflow: scroll;

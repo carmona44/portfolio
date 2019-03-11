@@ -1,3 +1,33 @@
+@font-face {
+    font-family: 'Copperplate Gothic Light';
+    src: url('./fuentes/COPRGTL.eot');
+    src: local('COPRGTL'),
+    url('./fuentes/COPRGTL.eot?#iefix') format('embedded-opentype'),
+    url('./fuentes/COPRGTL.woff') format('woff'),
+    url('./fuentes/COPRGTL.ttf') format('truetype'),
+    url('./fuentes/COPRGTL.svg') format('svg');
+}
+
+@font-face {
+    font-family: 'Pristina';
+    src: url('./fuentes/PRISTINA.eot');
+    src: local('PRISTINA'),
+    url('./fuentes/PRISTINA.eot?#iefix') format('embedded-opentype'),
+    url('./fuentes/PRISTINA.woff') format('woff'),
+    url('./fuentes/PRISTINA.ttf') format('truetype'),
+    url('./fuentes/PRISTINA.svg') format('svg');
+}
+
+@font-face {
+    font-family: 'AR ESSENCE';
+    src: url('./fuentes/ARESSENCE.eot');
+    src: local('ARESSENCE'),
+    url('./fuentes/ARESSENCE.eot?#iefix') format('embedded-opentype'),
+    url('./fuentes/ARESSENCE.woff') format('woff'),
+    url('./fuentes/ARESSENCE.ttf') format('truetype'),
+    url('./fuentes/ARESSENCE.svg') format('svg');
+}
+
 a:link, a:hover, a:visited, a:active, a {
     text-decoration:none;
     color:black;

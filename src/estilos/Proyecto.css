@@ -1,3 +1,13 @@
+@font-face {
+    font-family: 'Copperplate Gothic Light';
+    src: url('./fuentes/COPRGTL.eot');
+    src: local('COPRGTL'),
+    url('./fuentes/COPRGTL.eot?#iefix') format('embedded-opentype'),
+    url('./fuentes/COPRGTL.woff') format('woff'),
+    url('./fuentes/COPRGTL.ttf') format('truetype'),
+    url('./fuentes/COPRGTL.svg') format('svg');
+}
+
 .proyecto{
     float: left;
     width: 300px;
