@@ -34,7 +34,7 @@ class Contenido extends Component {
     };
 
     render(){
-
+        // eslint-disable-next-line
         var clipboard = new ClipboardJS('#copiarCorreo');
         let year = new Date().getFullYear();
 
@@ -57,17 +57,19 @@ class Contenido extends Component {
                         </p>
                         <p>
                             Entre mis conocimientos destacan:
-                            <ul className="conocimientos">
-                                <li><i class="fab fa-css3-alt"></i> CSS3</li>
-                                <li><i class="fab fa-html5"></i> HTML5</li>
-                                <li><i class="fab fa-js-square"></i> JavaScript</li>
-                                <li><i class="fab fa-java"></i> Java</li>
-                                <li><i class="fab fa-angular"></i> AngularJS</li>
-                                <li><img src="https://ionicframework.com/img/meta/favicon-16x16.png"></img> Ionic</li>
-                                <li><i class="fab fa-react"></i> ReactJS</li>
-                                <li><i class="fab fa-node"></i> NodeJS</li>
-                                <li><i class="fas fa-database"></i>SQL</li>
-                            </ul>
+                        </p>
+                        <ul className="conocimientos">
+                            <li><i className="fab fa-css3-alt"></i> CSS3</li>
+                            <li><i className="fab fa-html5"></i> HTML5</li>
+                            <li><i className="fab fa-js-square"></i> JavaScript</li>
+                            <li><i className="fab fa-java"></i> Java</li>
+                            <li><i className="fab fa-angular"></i> AngularJS</li>
+                            <li><img src="https://ionicframework.com/img/meta/favicon-16x16.png" alt="Ionic logo"></img> Ionic</li>
+                            <li><i className="fab fa-react"></i> ReactJS</li>
+                            <li><i className="fab fa-node"></i> NodeJS</li>
+                            <li><i className="fas fa-database"></i>SQL</li>
+                        </ul>
+                        <p>
                             Siendo <span className="palabraDestacada">JavaScript</span> junto con <span className="palabraDestacada">
                             ReactJS</span> el lenguaje y framework que utilizo actualmente en mis proyectos.
                         </p>
@@ -76,21 +78,21 @@ class Contenido extends Component {
                 <div id="proyectos">
                     <h2>PROYECTOS</h2>
                     <div className="grupoProyectos">
-                        {proyectos.map(e => <Proyecto actual={e}/>)}
+                        {proyectos.map((e, key) => <Proyecto key={key} actual={e}/>)}
                     </div>
                 </div>
                 <div id="contacto">
                     <h2>CONTACTO</h2>
                     <div className="contenidoContacto">
-                        <a className="botonContenido" href="mailto:dcacarmona44@gmail.com"><i class="far fa-envelope"></i> Mándame un correo</a>
-                        <i id="copiarCorreo" class="far fa-clone" title="Copiar correo al portapapeles" data-clipboard-text="dcacarmona44@gmail.com" onClick={this.handleMensaje}></i>
+                        <a className="botonContenido" href="mailto:dcacarmona44@gmail.com"><i className="far fa-envelope"></i> Mándame un correo</a>
+                        <i id="copiarCorreo" className="far fa-clone" title="Copiar correo al portapapeles" data-clipboard-text="dcacarmona44@gmail.com" onClick={this.handleMensaje}></i>
                         {this.state.mostrarMensaje ? <div className="mensaje"><span className="mensajeCopiado">¡ Correo copiado al portapapeles !</span></div> : null}
                         <p>O contacta conmigo a través de: </p>
                         <div className="iconosContacto">
-                            <a href="https://twitter.com/Carmona44" target="_blank"><i class="fab fa-twitter-square"></i></a>
-                            <a href="https://www.facebook.com/daniel.carmonaalarcon" target="_blank"><i class="fab fa-facebook-square"></i></a>
-                            <a href="https://www.instagram.com/carmona44/" target="_blank"><i class="fab fa-instagram"></i></a>
-                            <a href="https://www.strava.com/athletes/carmonaentrenos" target="_blank"><i class="fab fa-strava"></i></a>
+                            <a href="https://twitter.com/Carmona44" target="_blank" rel="noopener noreferrer"><i className="fab fa-twitter-square"></i></a>
+                            <a href="https://www.facebook.com/daniel.carmonaalarcon" target="_blank" rel="noopener noreferrer"><i className="fab fa-facebook-square"></i></a>
+                            <a href="https://www.instagram.com/carmona44/" target="_blank" rel="noopener noreferrer"><i className="fab fa-instagram"></i></a>
+                            <a href="https://www.strava.com/athletes/carmonaentrenos" target="_blank" rel="noopener noreferrer"><i className="fab fa-strava"></i></a>
                         </div>
                     </div>
                 </div>
@@ -102,8 +104,8 @@ class Contenido extends Component {
                             BLOG es uno de mis proyectos venideros y que más pronto que tarde comenzaré a desarrollar. Mientras
                             tanto puedes echarle un vistazo a uno antiguo que con tanto cariño me gusta recordar de vez en cuando...
                         </p>
-                        <a className="botonContenido" href="https://carmona44web.wordpress.com/" target="_blank">
-                            <i class="fas fa-angle-right"></i> Ir al BLOG antiguo</a>
+                        <a className="botonContenido" href="https://carmona44web.wordpress.com/" target="_blank" rel="noopener noreferrer">
+                            <i className="fas fa-angle-right"></i> Ir al BLOG antiguo</a>
                     </div>
                 </div>
                 <footer className="footerAbsoluto">&copy; {year} Daniel Carmona</footer>

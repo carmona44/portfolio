@@ -12,7 +12,7 @@ class Proyecto extends Component {
     render(){
         let lenguajeColor = this.state.proyectoActual.lenguaje === "JavaScript" ? {color:"#f1e05a"} : {color:"#b07219"};
         let botonVisita = this.state.proyectoActual.url ?
-            <a className="visitar" href={this.state.proyectoActual.url} target="_blank">Visitar</a>
+            <a className="visitar" href={this.state.proyectoActual.url} target="_blank" rel="noopener noreferrer">Visitar</a>
             : <span className="noweb">No web</span>;
         return(
             <div className="proyecto">
@@ -26,7 +26,7 @@ class Proyecto extends Component {
                     </div>
                     <div className="proyectoFooter">
                         {botonVisita}
-                        <a className="github" href={this.state.proyectoActual.ghUrl} target="_blank"><i class="fab fa-github"></i></a>
+                        <a className="github" href={this.state.proyectoActual.ghUrl} target="_blank" rel="noopener noreferrer"><i className="fab fa-github"></i></a>
                     </div>
                 </div>
                 <span className="titulo">{this.state.proyectoActual.nombre}</span>
