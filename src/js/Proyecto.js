@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import './Proyecto.css';
+import '../estilos/Proyecto.css';
 
 class Proyecto extends Component {
     constructor(props){

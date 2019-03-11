@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import './App.css';
+import '../estilos/App.css';
 import Perfil from './Perfil.js';
 import BarraNavegacion from './BarraNavegacion.js';
 import Contenido from './Contenido.js';

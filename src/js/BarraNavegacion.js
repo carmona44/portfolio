@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import './BarraNavegacion.css';
+import '../estilos/BarraNavegacion.css';
 
 class BarraNavegacion extends Component {
     render (){

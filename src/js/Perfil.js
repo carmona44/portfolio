@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import './Perfil.css';
-import foto from './foto-perfil.jpeg';
+import '../estilos/Perfil.css';
+import foto from '../img/foto-perfil.jpeg';
 
 class Perfil extends Component{
     render(){

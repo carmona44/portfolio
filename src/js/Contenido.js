@@ -1,13 +1,13 @@
 import React, { Component } from 'react';
 import ClipboardJS from 'clipboard';
-import './Contenido.css';
+import '../estilos/Contenido.css';
 import Proyecto from './Proyecto.js';
-import Foto1 from './webs-interesantes.JPG';
-import Foto2 from './markdown-previewer.JPG';
-import Foto3 from './calculadora.JPG';
-import Foto4 from './generador-password.JPG';
-import Foto5 from './random-team.JPG';
-import Foto6 from './portfolio.JPG';
+import Foto1 from '../img/webs-interesantes.JPG';
+import Foto2 from '../img/markdown-previewer.JPG';
+import Foto3 from '../img/calculadora.JPG';
+import Foto4 from '../img/generador-password.JPG';
+import Foto5 from '../img/random-team.JPG';
+import Foto6 from '../img/portfolio.JPG';
 
 const proyectos = [
     {nombre:"Webs interesantes", lenguaje:"JavaScript", img:Foto1, url:"https://carmona44.github.io/webs-interesantes/", ghUrl:"https://github.com/carmona44/webs-interesantes", year:"2019"},
